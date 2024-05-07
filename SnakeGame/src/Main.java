@@ -3,7 +3,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int boardWidth =600;
+        int boardWidth =800;
         int boardHeight=boardWidth;
 
         JFrame frame =new JFrame("Snake");
