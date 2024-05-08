@@ -13,10 +13,18 @@ public class Main {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        SnakeGame snakeGame=new SnakeGame(boardWidth,boardHeight);
-        frame.add(snakeGame);
+//        SnakeGame snakeGame=new SnakeGame(boardWidth,boardHeight);
+//        frame.add(snakeGame);
+//
+//        frame.pack();
+//        snakeGame.requestFocus();
+
+        // with Stones
+        snakeMultiLevel _snakeMultiLevel=new snakeMultiLevel(boardWidth,boardHeight);
+      frame.add(_snakeMultiLevel);
+
         frame.pack();
-        snakeGame.requestFocus();
+        _snakeMultiLevel.requestFocus();
 
 
     }
